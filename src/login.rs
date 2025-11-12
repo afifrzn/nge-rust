@@ -1,19 +1,19 @@
 use std::io;
 
 fn main() {
-    let mut usn = String::new();
-    let mut pass = String::new();
+    let mut username = String::new();
+    let mut password = String::new();
 
     println!(===LOGIN===);
 
     print!(Username: );
     use std::io::Write;
     std::io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut usn).expect("Gagal Membaca Username");
+    io::stdin().read_line(&mut username).expect("Gagal Membaca Username");
 
     print!("Password: ");
     std::io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut pass).expect("Gagal Membaca Password");
+    io::stdin().read_line(&mut password).expect("Gagal Membaca Password");
 
     let valid_usn = "admin";
     let valid_pass = "@#t";
