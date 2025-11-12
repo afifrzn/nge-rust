@@ -7,7 +7,7 @@ fn main() {
 
     println!("Penjumlahan {}", add);
     println!("Pengurangan {}", sub);
-    println!("Perkalian {}", sub);
+    println!("Perkalian {}", mul);
     println!("Pembagian {}", div);
     println!("rem {}", rem);
 }
