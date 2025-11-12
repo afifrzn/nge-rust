@@ -16,7 +16,7 @@ fn main() {
     io::stdin().read_line(&mut password).expect("Gagal Membaca password");
 
     let valid_username = "admin";
-    let valid_password = "@#t";
+    let valid_password = "1234";
 
     if username == valid_username && password == valid_password {
         println!("\n Yey dah login, Halo, {}!.", username);
