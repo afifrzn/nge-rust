@@ -4,22 +4,22 @@ fn main() {
     let mut username = String::new();
     let mut password = String::new();
 
-    println!(===LOGIN===);
+    println!("===LOGIN===");
 
-    print!(Username: );
+    print!("Username: ");
     use std::io::Write;
     std::io::stdout().flush().unwrap();
     io::stdin().read_line(&mut username).expect("Gagal Membaca Username");
 
-    print!("Password: ");
+    print!("password: ");
     std::io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut password).expect("Gagal Membaca Password");
+    io::stdin().read_line(&mut password).expect("Gagal Membaca password");
 
-    let valid_usn = "admin";
-    let valid_pass = "@#t";
+    let valid_username = "admin";
+    let valid_password = "@#t";
 
-    if username == valid_usn && password == valid_pass {
-        println!("\n Yey dah login, Halo, {}!.", usn);
+    if username == valid_username && password == valid_password {
+        println!("\n Yey dah login, Halo, {}!.", username);
     } else {
         println!("\n Yh login dulu");
     }
