@@ -1,26 +1,29 @@
-use std::io;
+use std::io::{self, Write};
 
 fn main() {
     let mut username = String::new();
     let mut password = String::new();
 
-    println!("===LOGIN===");
+    println!("=== LOGIN ===");
 
     print!("Username: ");
-    use std::io::Write;
-    std::io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut username).expect("Gagal Membaca Username");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut username).expect("Gagal membaca username");
 
-    print!("password: ");
-    std::io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut password).expect("Gagal Membaca password");
+    print!("Password: ");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut password).expect("Gagal membaca password");
+
+    // Hapus newline dari input
+    let username = username.trim();
+    let password = password.trim();
 
     let valid_username = "admin";
     let valid_password = "1234";
 
     if username == valid_username && password == valid_password {
-        println!("\n Yey dah login, Halo, {}!.", username);
+        println!("\nYey, login berhasil! Halo, {}!", username);
     } else {
-        println!("\n Yh login dulu");
+        println!("\nYh login dulu ");
     }
 }
