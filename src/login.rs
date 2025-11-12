@@ -4,14 +4,14 @@ fn main() {
     let mut usn = String::new();
     let mut pass = String::new();
 
-    println!(***LOGIN***);
+    println!(===LOGIN===);
 
-    print!(Username: )
+    print!(Username: );
     use std::io::Write;
     std::io::stdout().flush().unwrap();
     io::stdin().read_line(&mut usn).expect("Gagal Membaca Username");
 
-    print!("Password: ")
+    print!("Password: ");
     std::io::stdout().flush().unwrap();
     io::stdin().read_line(&mut pass).expect("Gagal Membaca Password");
 
